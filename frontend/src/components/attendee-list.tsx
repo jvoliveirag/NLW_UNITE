@@ -96,7 +96,9 @@ export function AttendeeList() {
   }
 
   function goToNextPage() {
-    setCurrentPage(page + 1);
+    if (page < totalPages) {
+      setCurrentPage(page + 1);
+    }
   }
 
   return (
@@ -177,7 +179,7 @@ export function AttendeeList() {
             <TableCell className="text-right" colSpan={3}>
               <div className="inline-flex items-center gap-8">
                 <span>
-                  Página {page} de {totalPages}
+                  Página {page} de {totalPages ? totalPages : 1}
                 </span>
 
                 <div className="flex gap-1.5">
