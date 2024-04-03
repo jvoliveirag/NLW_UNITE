@@ -23,3 +23,11 @@
 
 </div>
 
+## Running the app
+
+To run the application, clone this repository in your desired directory, then follow the next steps:
+
+1. Access the project folder through terminal or cmd;
+2. Run `npm install` to install all dependencies;
+3. To start the server, use the command `npm run dev` on the `/backend` folder;
+4. After that, you can either run the frontend locally using  `npm run dev` on the `/frontend` as well, or click <a href="https://pass-in-seven.vercel.app/">here</a> to go to the deployed version on Vercel.
